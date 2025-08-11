@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    background: none;
+    background-image: linear-gradient(rgb #03A63C, #04D939);
+    font-family: "Mozilla Headline", sans-serif;
+}
+
+body {
+    background-color: #03A63C;
+    min-width: 1200px;
+    height: 100%;
+}
+
+.header {
+    border-bottom: 1px solid #027333;
+    
+    width: 100%;
+    height: 27vh;
+    background-image: linear-gradient(to top, #025939, #027333);
+}
+
+h1, h4 {
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+
+.links {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+.links:hover {
+    transition: 0.4s linear;
+    font-size: 1.1rem;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+nav a {
+    color: white;
+    padding: 0rem 0.3rem 0rem 0.8rem;
+    margin: 0.5rem;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+div {
+
+    place-items: center;
+    padding: 0rem 10rem;
+}
+
+main {
+
+    height: 100%;
+    padding:1rem;
+    background-color: white;
+    border: 5px solid #027333;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px white;
+}
+
+.topico {
+    color: #027333;
+}
+
+p, h2 {
+    padding: 0.6rem 2.5rem;
+    text-align: justify;
+}
+
+main > img {
+    width: 99%;
+    border: 5px solid #027333;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px white;
+}
+
+
+
