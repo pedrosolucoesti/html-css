@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+body, ul, li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin-bottom: 100px;
+}
+
+a {
+    text-decoration: none;
+        color: white;
+}
+
+.header {
+    background-color: #1d1e20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu > li {
+    margin-left: 10px;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 10px;
+}
+
+/* CSS Flex BOX 1 */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+.flex > div {
+    flex: 1 1 200px;
+    margin: 10px ;
+}
+
+/* CSS GRID 1 */
+
+/* O Grid Layout, em CSS, é um sistema de layout bidimensional que permite organizar elementos HTML em linhas e colunas, oferecendo um controle preciso sobre o posicionamento e o tamanho dos elementos em uma página web. */
+
+.grid1 {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 780px;
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+
+/* Apartir do 4° Item, Adicione o background-color: blue / :nth-child() está dizendo: Quero falar com o filho dessa div */
+
+.grid1 > div:nth-child(n + 4) {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr; /* Está dizendo que, os itens apartir do 4° item vai ter duas colunas, no caso, a foto e a legenda - 1 - 2 - 3 - " 4 - 6 - 7 - 8 - 9 - 10 "  */
+
+    grid-gap: 10px; /* Pelo que eu percebi, ele é tipo o padding, só que no grid - Está dizendo que quer um espaçamento de 10px entre os itens */
+
+    align-items: center; /* Alinhar os itens ao centro */
+}
+
+.grid1 > div.anuncio {
+    grid-column: 1;
+    grid-row: 2 / 5;
+    border-top: 10px solid tomato;
+    display: block;
+
+    /* grid-row é uma propriedade que define onde um item de grade começa e termina em relação às linhas do grid. */
+}
+
+@media (max-width: 600px) {
+    .grid1 {
+        grid-template-columns:  repeat(2, 1fr);
+    }
+
+    /* As consultas de mídia são um recurso do CSS 3 que permite que a renderização do conteúdo se adapte a diferentes condições, como a resolução da tela / Ou seja, @media (max-width: 600px) quer dizer que: Quando o conteudo atingir o tamanho de 600px, grid-template-columns: 1fr 1fr;  ele vai ficar com apenas duas colunas - Lembrando de especificar qual elemento você gostaria de setar essas condições, que nesse caso ai é o ".grid" */
+
+    .grid1 > div:nth-child(n + 4) {
+        display: block;
+    }
+
+    /* Neste último comando "display:block" está dizendo que quando acontecer isso o display vai para a função block */
+}
+
+    /* SECTION Grid 2 */
+
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 20px;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.sidebar > div {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .grid2 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Quer dizer que, quando a largura da tela for < ou = 600px, o grid-template-columns da 
+    .grid2 terá apenas 1 ( Uma ) coluna. */
+
+    .sidebar {
+        display: flex;
+        overflow: scroll;
+
+        /* O sidebar se tornará um container flexível, que sempre exibirá barras de rolagem (horizontal e vertical, mas na pratica só a horizontal será usada devido ao seu layout). */
+        
+    }
+
+    /* A overflow, propriedade CSS controla o que acontece quando o conteúdo excede os limites da caixa de um elemento. Isso é particularmente relevante quando um elemento tem um widthe definido heighte seu conteúdo é maior que essas dimensões. */
+
+    .sidebar > div {
+        flex: 1 0 200px;
+        margin: 0px 10px;
+    }
+
+    /* flex: 1 0 200px → É um atalho para flex-grow, flex-shrink e flex-basis: 
+
+    1 ( flex-grow ) > o item pode crescer para ocupar espaço extra, proporcionalmente aos outros.
+    0 ( flex-shrink ) > o item não vai encolher abaixo do tamanho base.
+    200px ( flex-basis ) > tamanho inicial/mínimo do item é 200px.
+    */
+
+    /* margin: 0px 10px → Adiciona 10px de espaçamento nas laterais (esquerda/direita) e 0px em cima/baixo. */
+}
+
+
+    /* SECTION GRID 3 */
+
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+
+    /* Cria uma grade com 2 colunas e espaçamento de 20px; */
+}
+
+.grid3-item:nth-child(1) {
+    grid-row: 1 / 3;
+
+    /* o primeiro item ocupa duas linhas; */
+}
+
+.grid3-item {
+    display: grid;
+    /* Cada item é um grid */
+}
+
+.grid3-item > img {
+    grid-column: 1;
+    /* Posiciona a imagem na primeira coluna da grade. */
+
+    grid-row: 1 / 3;
+    /* Faz com que a imagem se estenda por duas linhas da grade, começando na primeira linha e terminando na terceira. */
+
+    align-self: end;
+    /* Alinha a imagem ao final da célula da grade na direção do eixo vertical (eixo de bloco), ou seja, a imagem será posicionada na parte inferior da célula. */
+}
+
+.grid3-item > p {
+    background: rgba(0, 0, 0, 0.658);
+    padding: 10px;
+    color: white;
+    grid-column: 1;
+    /* Posiciona o parágrafo na primeira coluna da grade. */
+
+    grid-row: 2;
+    /* Ocupará a 2° linha da grade*/
+
+    align-self: end;
+    /* Alinha no final do elemento */
+}
