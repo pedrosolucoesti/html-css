@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+
+    <style>
+
+        div {
+            padding: 10px;
+            align-items: center;
+        }
+
+        div.quadrado {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            border: 10px solid rgb(6, 43, 68);
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            background-color: lightgray;
+        }
+
+        div#q1 {
+            background-color: skyblue;
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+
+        div#q3 {
+            background-image: url('imagens/pattern003.png');
+        }
+
+        div > h3 {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.589);
+            padding: 5px;
+            margin: 0 auto;
+            border: 2px solid rgb(6, 43, 68);
+            border-radius: 5px;
+            transition: 0.5s linear;
+        }
+
+        div > h3:hover {
+            transition: 0.5s linear;
+            color:rgb(255, 238, 0);
+            background-color: rgb(128, 0, 128);
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="quadrado" id="q1">
+            <h3 class="text">quadrado1</h3>
+
+        </div>
+
+        <div class="quadrado" id="q2">
+            <h3 class="text">quadrado3</h3>
+
+        </div>
+
+        <div class="quadrado" id="q3">
+            <h3 class="text">quadrado3</h3>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
