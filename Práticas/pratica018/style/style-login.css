@@ -1,0 +1,116 @@
+@charset "UTF-8";
+                   
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --text-orange: #c27510;
+    --text-white: white;
+    --font-main: "Oswald", sans-serif;
+    --border-button: 1px solid white;
+}
+
+.border-button {
+    border: 2px solid #00000080;
+    border-radius: 15px;
+    padding: 5px 10px;
+    color: var(--text-white);
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+
+body {
+    height: 100vh;
+    background: url("../imagens/fazenda-img-body.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    height: 60vh;
+    border: 2px solid white;
+    background-image: linear-gradient(90deg, #815a26, #291e12);
+    border-radius: 10px;
+    padding: 25px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.container > h1 {
+    color: var(--text-orange);
+    font-family: var(--font-main);
+    margin: 5px 0px 0px 0px;
+    text-shadow: 1px 2px 3px rgb(0, 0, 0);
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 10px;
+    width: 100%;
+}
+
+.input-box > input {
+
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid #00000080;
+    padding: 5px 10px;
+    height: 25px;
+    color: var(--text-white);
+    margin-top: 10px;
+}
+
+.input-box > input::placeholder {
+    color: var(--text-white);
+}
+
+.remember {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.remember > p {
+    color: var(--text-white);
+}
+
+.remember > a {
+    color: var(--text-white);
+    transition: 0.4s all;
+}
+
+.remember > a:hover {
+    color: var(--text-orange);
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    transition: 0.4s all;
+    margin: 25px 0px;
+}
+
+button:hover {
+    color: var(--text-orange);
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+.have-account {
+    
+    
+}
+

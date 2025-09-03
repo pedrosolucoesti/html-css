@@ -1,0 +1,189 @@
+@charset "UTF-8";
+                   
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    height: 200vh;
+    background: url("../imagens/fazenda-img-body.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 98.9vw;
+    background-image: linear-gradient(90deg, #815a26, #291e12);
+    box-shadow: 3px 5px 10px rgb(0, 0, 0);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: fixed;
+    box-sizing: border-box;
+    padding: 0px 40px;
+}
+
+.header > input {
+    width: 240px;
+    height: 30px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    background-color: #756352;
+    color: white;
+    border-radius: 2px;
+}
+
+.header > input::placeholder {
+    color: white;
+}
+
+.navigation {
+    width: 190px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header > nav > a {
+    color: white;
+    padding: 5px;
+    transition: 0.3s all;
+}
+
+nav > a:hover {
+    background-color: #756352b4;
+    border-radius: 2px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    line-height: 1.2;
+    width: 130px;
+}
+
+.user-info > img {
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.login-label > a {
+    color: white;
+    padding: 3px;
+    transition: 0.3s all;
+}
+
+.login-label > a:hover {
+    background-color: #756352b4;
+    border-radius: 2px;
+}
+
+.container {
+    display: flex;
+    width: 80vw;
+    height: 500px;
+    background-color: #ffffff30;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.info-product {
+    width: 340px;
+    height: 450px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.info-product > h5 {
+    color: #d1d1d1;
+}
+
+.info-product > h1 {
+    color: #c27510;
+    margin: 5px 0;
+}
+
+.info-product > h2 {
+    color: #d1d1d1;
+}
+
+.info-product > a > h5 {
+    color: #c27510;
+    margin: 5px 0px;
+}
+
+.mapa {
+    background-color: rgba(0, 0, 0, 0.500);
+    width: 60px;
+    padding: 3px;
+    border-radius: 5px;
+    color: #c27510;
+    cursor: pointer;
+}
+
+.info-product > h6 {
+    background-color: rgba(0, 0, 0, 0.500);
+    padding: 3px;
+    border-radius: 5px;
+    color: #c27510;
+    cursor: pointer;
+}
+
+.devolucao {
+    background-color: rgba(0, 0, 0, 0.500);
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+.devolucao > h5 {
+    color: white;
+}
+
+.devolucao > h6 {
+    color: #c27510;
+}
+
+.frete {
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, 0.500);
+    width: 210px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+.frete > a {
+    color: #c27510;
+}
+
+.estrelas {
+    display: flex;
+    margin: auto 0;
+    justify-content: space-around;
+    width: 100px;
+}
+
+.estrelas > img {
+    width: 15px;
+    height: 15px;
+    color: white;
+    align-self: flex-end;
+}
+
