@@ -1,0 +1,291 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+
+@font-face {
+    font-family: YoutubeB;
+    src: url(Youtube-Sans-font/youtube-sans-bold.ttf);
+}
+
+@font-face {
+    font-family: YoutubeL;
+    src: url(Youtube-Sans-font/youtube-sans-light.ttf);
+}
+
+@font-face {
+    font-family: YoutubeM;
+    src: url(Youtube-Sans-font/youtube-sans-medium.ttf);
+}
+
+.font-bold {
+    font-family: YoutubeB;
+}
+
+.font-medium {
+    font-family: YoutubeM;
+}
+
+.font-light {
+    font-family: YoutubeL;
+}
+
+body {
+    background-color: #0F0F0F;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 56px;
+    padding: 16px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: #0F0F0F;
+}
+
+
+.logo-box {
+    display: flex;
+    align-items: center;
+}
+
+.logo-box > img {
+    width: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+#br {
+    padding: 0 0 10px 10px;
+    color: rgb(187, 187, 187);
+}
+
+.logo > img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.logo > p {
+    color: white;
+    cursor: pointer;
+}
+
+.icon-header {
+    width: 35px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    min-width: 400px;
+}
+
+.input-content {
+    display: flex;
+    width: 550px;
+    background-color: #121212;
+    border: 1px solid rgb(45, 45, 45);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-sizing: border-box;
+    padding: 0 4px 0 16px;
+    align-items: center;
+}
+
+.input-content > input {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    font-size: 17px;
+    padding: 9px 0;
+}
+
+.input-content > input::placeholder {
+    font-size: 17px;
+}
+
+.teclado {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60px;
+    height: 40px;
+    border: 1px solid rgb(60, 60, 60);
+    border-left: none;
+    box-sizing: border-box;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #222222;
+    cursor: pointer;
+}
+
+.search-button > img {
+    width: 22px;
+    height: 22px;
+}
+
+.speak-search {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.speak-search > img {
+    width: 22px;
+    padding: 8px;
+    border-radius: 50px;
+    background-color: #3f3f3f90;
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.create-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3f3f3f90;
+    border-radius: 20px;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+.create-content > img {
+    width: 25px;
+    margin-right: 3px;
+}
+
+.create-content > p {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.notification {
+    display: flex;
+}
+
+.notification > img {
+    width: 26px;
+}
+
+.qntnotification > p {
+    position: relative;
+    right: 11px;
+    background-color: red;
+    padding: 0px 5px;
+    border-radius: 50px;
+    color: white;
+    box-shadow: -4px 2px 0px black;
+    font-size: 12px;
+}
+
+.account-client > img {
+    width: 32px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.testemedia {
+    display: none;
+}
+
+/* Smartphones (600px para baixo - Header) */
+@media only screen and (max-width: 600px) {
+
+    .header-teste {
+        width: 100vw;
+    }
+
+    .testemedia {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 56px;
+        box-sizing: border-box;
+        align-items: center;
+        background-color: #0F0F0F;
+    }
+
+    .logo-teste {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-teste > img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-teste > p {
+        color: white;
+    }
+
+    .right-teste {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .sino {
+        display: flex;
+        padding: 3px;
+        align-items: center;
+    }
+
+    .sino > img {
+        width: 30px;
+    }
+
+    .sino > p {
+        position: relative;
+        right: 11px;
+        bottom: 8px;
+        background-color: red;
+        padding: 0px 5px;
+        border-radius: 20px;
+        color: white;
+        box-shadow: -4px 2px 0px black;
+        font-size: 14px;
+    }
+
+    #live {
+        margin-right: 10px;
+    }
+
+    .right-teste > img {
+        width: 30px;
+        
+    }
+
+    #search {
+        width: 25px;
+        padding: 3px;
+    }
+
+    #end, #start, #center {
+        display: none;
+    }
+
+}
