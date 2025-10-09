@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.aside {
+    border-right: 1px solid rgba(255, 255, 255, 0.100);
+    width: 215px;
+    padding: 15px;
+}
